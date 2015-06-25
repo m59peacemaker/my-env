@@ -28,7 +28,6 @@ source ~/.bashrc
 
 npm install -g \
   tape \
-  testling \
   gulp \
   grunt \
   bower \
