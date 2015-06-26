@@ -1,36 +1,13 @@
 #!/usr/bin/env bash
 
-./gnome-colors.sh
+mkdir ~/tmp
 
-apt-get update && apt-get install -y \
+sudo apt-get update && sudo apt-get install -y \
   wget \
   curl \
-  git \
-  vim \
-  docker.io
+  git
 
-sudo groupadd docker
-sudo gpasswd -a $(id -un) docker
-sudo service docker.io restart
-newgrp docker
+./scripts/setup-vim.sh
+cp ./resources/.vimrc ~
 
-mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-cp ./.vimrc ~
-git clone https://github.com/mxw/vim-jsx.git         ~/.vim/bundle
-git clone git://github.com/digitaltoad/vim-jade.git  ~/.vim/bundle
-git clone https://github.com/gioele/vim-autoswap.git ~/.vim/bundle
-git clone https://github.com/Yggdroot/indentLine     ~/.vim/bundle
-
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
-nvm install stable
-echo "nvm use stable" >> ~/.bashrc
-source ~/.bashrc
-
-npm install -g \
-  tape \
-  gulp \
-  grunt \
-  bower \
-  nodemon \
-  live-server \
-  http-server
+./scripts/setup-node.sh
