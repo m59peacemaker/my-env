@@ -11,5 +11,3 @@ sudo apt-get update && sudo apt-get install -y \
 cp ./resources/.vimrc ~
 
 ./scripts/setup-node.sh
-
-echo "export HISTFILESIZE=10000" >> ~/.bashrc
