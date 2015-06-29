@@ -24,6 +24,8 @@ let g:indentLine_char = '|'
 " mappings
 map <C-c> "+y<CR>
 
+command Wq wq
+
 " spell check theme
 hi SpellBad cterm=undercurl,bold
 hi SpellBad ctermbg=white

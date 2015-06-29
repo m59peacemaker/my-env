@@ -13,4 +13,5 @@ npm install -g \
   bower \
   nodemon \
   live-server \
-  http-server
+  http-server \
+  cordova
