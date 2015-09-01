@@ -5,7 +5,8 @@ mkdir ~/tmp
 sudo apt-get update && sudo apt-get install -y \
   wget \
   curl \
-  git
+  git \
+  xclip
 
 ./scripts/setup-vim.sh
 cp ./resources/.vimrc ~
