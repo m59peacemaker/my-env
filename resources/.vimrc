@@ -20,6 +20,7 @@ set undodir=~/tmp//
 
 " plugin settings
 let g:indentLine_char = '|'
+let g:vim_json_syntax_conceal = 0
 
 " mappings
 map <C-c> "+y<CR>

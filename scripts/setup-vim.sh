@@ -13,3 +13,5 @@ git clone https://github.com/gioele/vim-autoswap.git
 git clone https://github.com/Yggdroot/indentLine
 git clone https://github.com/othree/yajs.vim
 git clone https://github.com/othree/es.next.syntax.vim
+git clone https://github.com/elzr/vim-json
+# git clone https://github.com/bigfish/vim-js-context-coloring
