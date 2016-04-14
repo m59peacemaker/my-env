@@ -9,6 +9,8 @@ sudo apt-get update && sudo apt-get install -y \
   xclip
 
 ./scripts/setup-vim.sh
-cp ./resources/.vimrc ~
+cp ./resources/.vimrc ~/
 
 ./scripts/setup-node.sh
+
+curl -sSL https://get.docker.com/ | sh
