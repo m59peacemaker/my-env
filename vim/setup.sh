@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+dir=$(dirname "$BASH_SOURCE")
+
 sudo apt-get update && sudo apt-get install -y vim-gnome glipper
 
 mkdir -p ~/.vim/autoload ~/.vim/bundle
@@ -15,3 +17,5 @@ git clone https://github.com/othree/yajs.vim
 git clone https://github.com/othree/es.next.syntax.vim
 git clone https://github.com/elzr/vim-json
 # git clone https://github.com/bigfish/vim-js-context-coloring
+
+cp $dir/vimrc ~/
