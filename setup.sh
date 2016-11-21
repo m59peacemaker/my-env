@@ -17,3 +17,8 @@ $dir/terminal/setup.sh
 $dir/node/setup.sh
 
 curl -sSL https://get.docker.com/ | sh
+
+cat << EOF > ~/.bashrc
+drm() { docker rm \$(docker ps -a | tail -n +2 | awk {'print \$1'}); }
+drmi() { docker rmi \$(docker images | grep "<none>" | awk {'print \$3'}); }
+EOF
