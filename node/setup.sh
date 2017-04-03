@@ -10,6 +10,7 @@ source ~/.bashrc
 npm config set init.author.name "Johnny Hauser"
 npm config set init.author.email johnnyhauser@gmail.com
 npm config set init.license CC0-1.0
+npm config set init.version 0.0.0
 
 npm install -g \
   tape \
