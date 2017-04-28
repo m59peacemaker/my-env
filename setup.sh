@@ -1,16 +1,20 @@
 #!/usr/bin/env bash
 
+sudo apt-get update
+
 dir=$(dirname "$BASH_SOURCE")
 
 mkdir ~/tmp
 
 gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 
-sudo apt-get update && sudo apt-get install -y \
+sudo apt-get install -y \
   wget \
   curl \
   git \
   xclip
+
+sudo pip install mackup
 
 $dir/vim/setup.sh
 $dir/terminal/setup.sh
